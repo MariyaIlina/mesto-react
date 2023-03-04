@@ -8,7 +8,6 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick, userAvatar
     api.getUserInfo()
       .then((data) => {
         setUser(data)
-        console.log(data)
       })
       .catch((err) => console.log(err))
   }, [])
@@ -16,7 +15,6 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick, userAvatar
   React.useEffect(() => {
     api.getImages(cards)
       .then((res) => {
-        console.log('=>', res)
         setCards(res);
       })
       .catch((err) => console.log(err))
