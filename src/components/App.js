@@ -39,9 +39,6 @@ function App() {
         onAddPlace={handleAddPlaceClick}
         onEditAvatar={handleEditAvatarClick}
         onCardClick={handleCardClick}
-      // userName={setUser.name}
-      // userAvatar={setUser.about}
-      // userDescription={useEffect}
       />
       <Footer />
       <PopupWithForm
