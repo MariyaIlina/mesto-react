@@ -61,4 +61,5 @@
 @import url(../src/blocks/popup/__content/_user-avatar/popup__content_user-avatar.css);
 @import url(../src/blocks/profile/__avatar-edit/profile__avatar-edit.css);
 @import url(../src/blocks/popup/_user-avatar/popup_user-avatar.css);
+@import url(../src/blocks/element/__delete/_none/element__delete_none.css);
 
