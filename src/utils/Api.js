@@ -15,13 +15,15 @@ class Api {
   getUserInfo = () => {
     return fetch(this._baseUrl + "/users/me", {
       headers: this._headers,
-    }).then(this._checkResponse);
+    }).
+    then(this._checkResponse);
   };
 
   getImages = () => {
     return fetch(this._baseUrl + "/cards", {
       headers: this._headers,
-    }).then(this._checkResponse);
+    })
+    .then(this._checkResponse);
   };
 
   addCard = (data) => {
@@ -33,14 +35,16 @@ class Api {
         name: data.name,
         link: data.link,
       }),
-    }).then(this._checkResponse);
+    })
+    .then(this._checkResponse);
   };
 
   deleteCard = (_id) => {
     return fetch(this._baseUrl + "/cards/" + _id, {
       headers: this._headers,
       method: "DELETE",
-    }).then(this._checkResponse);
+    })
+    .then(this._checkResponse);
   };
 
   editProfile = (data) => {
@@ -51,7 +55,8 @@ class Api {
         name: data.name,
         about: data.about,
       }),
-    }).then(this._checkResponse);
+    })
+    .then(this._checkResponse);
   };
 
   putLike(_id) {
@@ -65,7 +70,8 @@ class Api {
     return fetch(this._baseUrl + "/cards/likes/" + _id, {
       headers: this._headers,
       method: "DELETE",
-    }).then(this._checkResponse);
+    })
+    .then(this._checkResponse);
   }
 
   changeLikeCardStatus(_id, isLiked) {
@@ -85,10 +91,11 @@ class Api {
   };
 }
 
-export const api = new Api({
+ const api = new Api({
   baseUrl: "https://mesto.nomoreparties.co/v1/cohort-59",
   headers: {
     authorization: "510ed949-2f9c-4a1e-b028-07a35bd485cd",
     "Content-Type": "application/json",
   },
 });
+export default api 
