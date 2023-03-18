@@ -3,7 +3,7 @@ import logo from '../images/logo.svg'
 
 function Header() {
   return (
-    <header className="header root__header">
+    <header className="header page__header">
       <img src={logo} alt="логотип" className="header__logo" />
     </header>
   )

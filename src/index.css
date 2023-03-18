@@ -1,10 +1,10 @@
 @import url(../src/vendor/normalize.css);
 @import url(../src/vendor/fonts/fonts.css);
 @import url(../src/blocks/root/root.css);
-@import url(../src/blocks/root/__header/root__header.css);
 @import url(../src/blocks/profile/profile.css);
 @import url(../src/blocks/profile/__avatar/profile__avatar.css);
 @import url(../src/blocks/root/__profile/root__profile.css);
+@import url(../src/blocks/root/__header/root__header.css);
 @import url(../src/blocks/profile/__info/profile__info.css);
 @import url(../src/blocks/profile/__name/profile__name.css);
 @import url(../src/blocks/profile/__text/profile__text.css);

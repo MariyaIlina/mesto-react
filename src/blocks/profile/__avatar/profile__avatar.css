@@ -8,7 +8,7 @@
   position: relative;
   object-position: center;
   object-fit: cover;
-  display: block;
+  display: flex;
   overflow: hidden;
   flex-basis: 120px;
 
